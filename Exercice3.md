@@ -132,8 +132,27 @@ Matériel B = routeur, a tenté de transmettre les paquets ICMP du PC3 vers PC2
 
 ### Fichier 3 :
 
-### Q.3.21 
+### Q.3.21  
 
-### Q.3.22 
+- Source :  
 
-### Q.3.23 
+Nom du matériel : PC4
+Adresse IP : 10.10.4.2  
+
+- Destination :
+
+Nom du matériel : Routeur R2 (interface g2/0)
+Adresse IP : 172.16.5.253
+
+### Q.3.22   
+
+- Adresse MAC source : ca:01:da:d2:00:1c
+- Adresse MAC destination : ca:03:9e:ef:00:38
+- **Déduction** : La trame a été capturée à un point où elle est transmise du PC4 vers le routeur R2
+
+### Q.3.23
+
+- La communication a été enregistrée sur le réseau local (LAN) entre PC4 (10.10.4.2) et le routeur R2 (interface g2/0 avec l'adresse IP 172.16.5.253).
+
+
+
