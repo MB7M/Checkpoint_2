@@ -4,7 +4,7 @@ C'est à cause de la ligne 27 partie Select-Object -Skip 2, qui saute les deux p
 
 Correction : 
 ```powershell
-$Users = Import-Csv -Path $CsvFile -Delimiter ";" | Select-Object -Skip 1
+$Users = Import-Csv -Path $CsvFile -Delimiter ";" -Header ... -Encoding UTF8 | Select-Object -Skip 1
 ```
 
 #### Q.2.6 Le champs Description est importé du fichier CSV mais n'est pas utilisé.
@@ -97,10 +97,10 @@ Correction du script dans la partie création d'utilisateur:
 ```
 Q.2.11 L'ajout des utilisateurs dans le groupe des utilisateurs locaux ne fonctionne pas. Corrige le script pour que cela fonctionne.
 
-correction de -Group "utilisateurs" en "Users"
+correction de -Group "Users" en "Utilisateurs"
 
 ```powershell
-Add-LocalGroupMember -Group "Users" -Member $Name
+Add-LocalGroupMember -Group "Utilisateurs" -Member $Name
 ```
 
 Q.2.12 Plusieurs fois dans le code du scrip, la chaine "$Prenom.$Nom" est utilisée.
